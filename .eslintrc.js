@@ -13,7 +13,7 @@ module.exports = {
     },
     "rules": {
         "semi": ["error", "always"], // semicolon required
-        "quotes": ["error", "double"], // you must use only double quotes
+        //"quotes": ["error", "double"], // you must use only double quotes
         "no-var": "error" // no allowed using var variable
     }
 };
