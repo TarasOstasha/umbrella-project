@@ -1,6 +1,7 @@
 const express = require('express');
 const { MongoClient, ObjectId } = require('mongodb');
 const debug = require('debug')('app:bookRoutes');
+const passport = require('passport');
 
 const bookRouter = express.Router();
 
