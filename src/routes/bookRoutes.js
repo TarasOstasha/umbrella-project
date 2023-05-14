@@ -3,9 +3,10 @@ const { MongoClient, ObjectId } = require('mongodb');
 const debug = require('debug')('app:bookRoutes');
 const bookController = require("../controllers/bookController");
 const bookRouter = express.Router();
+const bookService = require("../services/goodreadsService");
 
 function router(nav) {
-  const { getIndex, getByid, middleware } = bookController(nav);
+  const { getIndex, getByid, middleware } = bookController(bookService, nav);
   bookRouter.use(middleware);
   // const books = [
   //   {
